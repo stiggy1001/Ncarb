@@ -1,0 +1,55 @@
+﻿@{
+    Layout = null;
+}
+
+<div class="hero-unit">
+    <h1>Welcome - NCARB</h1>
+    <p>Greetings to the NCARB test website
+        This website will allow you to view the data from the supplied WEB API.
+    </p>
+</div>
+<div class="row">
+   
+@*<div data-ng-app="main" data-ng-controller="testController">
+
+First Name: <input type="text" data-ng-model="firstName"><br>
+Last Name: <input type="text" data-ng-model="lastName"><br>
+<br>
+Full Name: {{firstName + " " + lastName}}*@
+    <form >
+    <div data-ng-app="main" data-ng-controller="filterController">
+        <p>Enter items you would like to filter on:</p>
+        
+        <p>First Name: <input type="text" data-ng-model="fname"></p>
+        <p>Last Name: <input type="text" data-ng-model="lname"></p>
+        <p>City: <input type="text" data-ng-model="city"></p>
+            <p>State: <input type="text" data-ng-model="state"></p>
+            <button data-ng-click="filter()">Filter</button>
+        
+    
+    </div>
+    
+    <div data-ng-app="main" data-ng-controller="filterController">
+        <div id="grid1" class="grid-style" data-ng-grid="gridOptions"></div>
+    </div>
+    </form>
+
+ @*   <div data-ng-app="main" data-ng-controller="filterController"> 
+        <table>
+            <tr data-ng-repeat="x in names">
+                <td>{{ x.id}}</td>    
+                <td>{{ x.firstName}}</td>
+                <td>{{ x.lastName }}</td>
+                <td>{{ x.city }}</td>
+                <td>{{ x.stateCode }}</td>
+                <td>{{ x.countryCode }}</td>
+            </tr>
+        </table>
+
+    </div>*@
+
+    
+
+
+</div>
+
